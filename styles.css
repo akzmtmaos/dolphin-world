@@ -1,0 +1,161 @@
+/* styles.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: url('background.png') no-repeat center center fixed;
+    background-size: cover;
+    color: white;
+}
+
+.title-logo {
+    display: block;
+    margin: 0 auto;
+    width: 900px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.5); /* Adding transparency */
+    margin: 50px auto;
+    width: 80%;
+    border-radius: 15px;
+}
+
+header h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.intro {
+    margin-bottom: 40px;
+}
+
+.about {
+    margin: 40px 0;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.9em;
+    color: #ddd;
+}
+
+/* More styles will be added later */
+/* Fun Facts Section */
+.fun-facts {
+    margin: 40px 0;
+}
+
+.fun-facts button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #f0a500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fun-facts button:hover {
+    background-color: #cf8a00;
+}
+
+#fact-display {
+    margin-top: 20px;
+    font-size: 1.5em;
+    opacity: 1; /* Ensure opacity is 1 when a fact is displayed */
+    transition: opacity 0s;
+}
+
+/* Gallery Grid */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.gallery-item {
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Lightbox */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.lightbox-content {
+    display: block;
+    margin: auto;
+    max-width: 90%;
+    max-height: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+/* Container styling */
+.info-sections {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+/* Styling for individual containers */
+.info-container {
+    background-color: rgba(255, 255, 255, 0.8); /* semi-transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    flex: 1;
+}
+
+.about-container, .did-you-know-container, .dolphin-gallery-container {
+    background-color: rgba(16, 21, 70, 0.8); /* Semi-transparent dark blue */
+    color: white;
+}
+
+/* Button styling */
+.reveal-fact {
+    background-color: #ff6347;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.reveal-fact:hover {
+    background-color: #ff4500;
+}

@@ -1,0 +1,22 @@
+
+/* animate did-you-know-text moving up and down */
+
+.did-you-know-text, .about-dolphin-text, .dolphin-gallery-text, .title-logo {
+    position: relative;
+    animation-name: move-up-and-down;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes move-up-and-down {
+    0% {
+        top: 0;
+    }
+    50% {
+        top: 10px;
+    }
+    100% {
+        top: 0;
+    }
+}

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dolphin World</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="imgtext-animation.css">
+</head>
+<body>
+    <img class="title-logo" src="img/logo.png">
+    <p style="
+        color: rgb(16, 21, 70);
+        font-size: 24px; 
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+        text-align: center;" 
+    >🐬 EXPLORE THE FASCINATING WORLD OF DOLPHINS!! 🐬 <br> ZARA LARSSON, WE LUV U!!! AAAAAAH</p>
+    <div class="container">
+        <section class="intro">
+            <p style="font-size: 18px;">
+                I 🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬 JUST!! 🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄 WANNA 💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞 BE ✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨ PART OF YOUR... 🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬🐬
+                SYMPHONY!!! 🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🧚🏻🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄🦄✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨✨💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞💞
+            </p>
+        </section>
+        <div class="info-sections">
+            <!-- Container for "About Dolphins" -->
+            <div class="info-container about-container">
+                <img class="about-dolphin-text" src="img/about-dolphins.png" style="width: 500px;">
+                <section class="about">
+                    <p style="font-size: 20px;">Dolphins are highly intelligent marine mammals known for their playful behavior and remarkable communication skills.</p>
+                </section>
+            </div>
+            <!-- Container for "Did You Know?" -->
+            <div class="info-container did-you-know-container">
+                <img class="did-you-know-text" src="img/did-you-know.png" style="width: 400px; margin-bottom: 12px; padding-bottom: 2px;">
+                <section class="did-you-know">
+                    <button class="reveal-fact">Reveal a Fun Fact!</button>
+                    <p class="fact-text" id="fact-display"></p>
+                </section>
+            </div>
+        </div>         
+        <section class="gallery">
+            <img class="dolphin-gallery-text" src="img/dolphin-gallery.png" style="width: 600px; margin: 50px;">
+            <!-- Dolphin images will be added here later -->
+            <div class="info-container dolphin-gallery-container">
+                <div class="gallery-grid">
+                    <img src="gallery/dolphin1.png" alt="Dolphin Image 1" class="gallery-item">
+                    <img src="gallery/dolphin2.png" alt="Dolphin Image 2" class="gallery-item">
+                    <img src="gallery/dolphin3.png" alt="Dolphin Image 3" class="gallery-item">
+                    <img src="gallery/dolphin4.png" alt="Dolphin Image 4" class="gallery-item">
+                    <img src="gallery/dolphin5.png" alt="Dolphin Image 5" class="gallery-item">
+                    <img src="gallery/dolphin6.png" alt="Dolphin Image 6" class="gallery-item">
+                    <img src="gallery/dolphin7.png" alt="Dolphin Image 7" class="gallery-item">
+                    <img src="gallery/dolphin8.png" alt="Dolphin Image 8" class="gallery-item">
+                    <img src="gallery/dolphin9.png" alt="Dolphin Image 9" class="gallery-item">
+                    <img src="gallery/dolphin10.png" alt="Dolphin Image 10" class="gallery-item">
+                    <img src="gallery/dolphin11.png" alt="Dolphin Image 11" class="gallery-item">
+                    <img src="gallery/dolphin12.png" alt="Dolphin Image 12" class="gallery-item">
+                </div>
+            </div>
+            
+            <!-- Lightbox Modal -->
+            <div id="lightbox" class="lightbox">
+                <span class="close">&times;</span>
+                <img class="lightbox-content" id="lightbox-img">
+            </div>
+        </section>
+        <footer>
+            <p>&copy; 2024 MKR. All rights reserved.</p>
+        </footer>
+    </div>
+
+    <!-- Background Music -->
+    <audio src="background-music.mp3" loop autoplay></audio>
+    <script src="scripts.js"></script>
+</body>
+</html>
